@@ -1,0 +1,11 @@
+﻿<div name="editorForm" ng-form="form">
+    <label>Paragraph</label>
+    <div class="value">
+        <input style="height:200px; width: 300px; border-radius: 5px; border:2px solid black; padding: 5px;"type="text" placeholder="write some content" required ng-model="ctrl.editing.paragraph" />
+    </div>
+
+    <div class="actions">
+        <button ng-click="ctrl.onClickOK()" class="material-icons" ng-disabled="editorForm.$invalid">check</button>
+        <button ng-click="ctrl.onClickCancel()" class="material-icons">close</button>
+    </div>
+</div>

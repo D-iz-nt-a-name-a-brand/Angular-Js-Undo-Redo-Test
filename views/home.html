@@ -1,0 +1,13 @@
+﻿
+<label>Paragraph</label>
+<div class="value">
+    {{ctrl.model.people.paragraph}}
+</div>
+
+
+
+<div class="actions">
+    <button ng-click="ctrl.onClickEdit()" class="material-icons">edit</button>
+    <button ng-click="ctrl.onClickUndo()" class="material-icons" ng-disabled="!ctrl.history.canUndo">undo</button>
+    <button ng-click="ctrl.onClickRedo()" class="material-icons" ng-disabled="!ctrl.history.canRedo">redo</button>
+</div>
